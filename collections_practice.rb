@@ -6,6 +6,7 @@ def organize_schools (schools)
       locs.push(loc)
     end
   end
+  locs.uniq!
   return locs
 end
 
