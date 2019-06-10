@@ -1,13 +1,27 @@
 require "pry"
 def organize_schools (schools)
   locs = []
+  locs_hash = {}
+
   schools.each do |s_key, s_data|
     s_data.each_value do |loc|
       locs.push(loc)
     end
   end
   locs.uniq!
-  return locs
+
+  locs.each do |loc|
+    locs_hash[loc] = []
+
+    schools.each do |s_key, s_data|
+      s_data.each_value do |town|
+        if loc == town
+          locs_hash[loc].push(s_key)
+        end
+      end
+    end
+  end
+  return locs_hash
 end
 
 
