@@ -1,6 +1,11 @@
 require "pry"
 def organize_schools (schools)
-
+  locs = []
+  schools.each do |s_key, s_data|
+    s_data.each_value do |loc|
+      locs.push(loc)
+    end
+  end
 end
 def find_cool (ar)
   new_ar = []
