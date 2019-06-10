@@ -11,7 +11,9 @@ def find_cool (ar)
       end
     end
 
-    new_ar.push(new_item)
+    if new_item != {}
+      new_ar.push(new_item)
+    end
   end
   return new_ar
 end
