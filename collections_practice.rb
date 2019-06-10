@@ -6,7 +6,10 @@ def organize_schools (schools)
       locs.push(loc)
     end
   end
+  return locs
 end
+
+
 def find_cool (ar)
   new_ar = []
 
