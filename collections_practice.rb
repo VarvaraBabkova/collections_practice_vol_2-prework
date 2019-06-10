@@ -1,4 +1,7 @@
 require "pry"
+def organize_schools (schools)
+
+end
 def find_cool (ar)
   new_ar = []
 
